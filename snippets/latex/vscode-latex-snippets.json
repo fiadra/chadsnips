@@ -31,9 +31,6 @@
         "body": ["\\displaystyle\\frac{$1}{$2}$0"],
         "description": ["Insert large fraction notation"]
     },
-
-
-
     "Italic Text": {
         "prefix": ["italic", "\\italic", "*"],
         "body": "\\textit{$1}$0",
@@ -49,9 +46,6 @@
         "body": "\\textbf{\\textit{$1}}$0",
         "description": "Insert bold italic text."
     },
-
-
-
     "Section": {
         "prefix": ["section", "\\section"],
         "body": ["\\section{$1}$0"],
@@ -85,9 +79,6 @@
         ],
         "description": "Paragraph"
     },
-
-
-
     "Theorem": {
         "prefix": ["theorem", "\\theorem"],
         "body": [
@@ -154,7 +145,7 @@
     },
     "Math": {
         "prefix": "math",
-        "body": ["$ $1 $ $0"],
+        "body": ["$${1:${TM_SELECTED_TEXT}}$$0"],
         "description": "Add some Math"
     },
     "DisplayMath": {
@@ -200,8 +191,6 @@
         ],
         "description": "Begin - End"
     },
-
-
     "Indent": {
         "prefix": ["tab", "\\tab"],
         "body": ["\\indent "],
@@ -338,7 +327,7 @@
         "description": "Make text uppercase (all caps)"
     },
     "Lowercase": {
-        "prefix": "lowecase",
+        "prefix": "lowercase",
         "body": "\\lowercase{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "Make text lowercase (no caps)"
     },
@@ -372,9 +361,6 @@
         "body": "\\wedge",
         "description": "wedge"
     },
-
-
-
     "alpha": {
         "prefix": ";a",
         "body": "\\alpha",
@@ -510,9 +496,6 @@
         "body": "\\zeta",
         "description": "zeta"
     },
-
-
-
     "Delta": {
         "prefix": ";D",
         "body": "\\Delta",
@@ -563,9 +546,6 @@
         "body": "\\Omega",
         "description": "Omega"
     },
-
-
-
     "(": {
         "prefix": "@(",
         "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right)",
@@ -581,9 +561,6 @@
         "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right]",
         "description": "left[ ... right]"
     },
-
-
-
     "Algorithm": {
         "prefix": "algo",
         "body": [
@@ -629,9 +606,6 @@
         "body": ["${1:Algorithm}~\\ref{algo:$2}$0"],
         "desciption": "Ref for Algorithm"
     },
-
-
-
     "Figure": {
         "prefix": "figure",
         "body": [
@@ -667,17 +641,11 @@
         ],
         "description": "Add a table"
     },
-
-
-
     "Cite": {
         "prefix": "cite",
         "body": ["\\cite{$1}$0"],
         "description": "Add a cite"
     },
-
-
-
     "Template": {
         "prefix": ["template", "\\template"],
         "body": [
