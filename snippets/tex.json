@@ -145,7 +145,7 @@
     },
     "Math": {
         "prefix": "math",
-        "body": ["$${1:${TM_SELECTED_TEXT}}$$0"],
+        "body": ["\\($1\\)$0"],
         "description": "Add some Math"
     },
     "DisplayMath": {
@@ -293,7 +293,7 @@
     },
     "Norm": {
         "prefix": "norm",
-        "body": "\\| ${1:${TM_SELECTED_TEXT}} \\|$0",
+        "body": "\\|${1:${TM_SELECTED_TEXT}}\\|$0",
         "description": "norm command"
     },
     "Big|": {
