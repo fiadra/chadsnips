@@ -31,6 +31,11 @@
         "body": ["\\displaystyle\\frac{$1}{$2}$0"],
         "description": ["Insert large fraction notation"]
     },
+    "Inline Text": {
+        "prefix": ["text", "\\text"],
+        "body": "\\text{$1}$0",
+        "description": "Insert inline text."
+    },
     "Italic Text": {
         "prefix": ["italic", "\\italic"],
         "body": "\\textit{$1}$0",
