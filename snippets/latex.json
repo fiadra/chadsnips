@@ -288,7 +288,7 @@
     },
     "Lim": {
         "prefix": "lim",
-        "body": "\\lim_{$1}^{$2}$3",
+        "body": "\\lim_{$1}$2",
         "description": "lim command"
     },
     "Norm": {
@@ -361,10 +361,35 @@
         "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "math typewriter font"
     },
+    "Models": {
+        "prefix": "models",
+        "body": "\\vDash",
+        "description": "models"
+    },
+    "Proves": {
+        "prefix": "proves",
+        "body": "\\vdash",
+        "description": "proves"
+    },
     "Wedge": {
-        "prefix": "wedge",
+        "prefix": "and",
         "body": "\\wedge",
         "description": "wedge"
+    },
+    "Vee": {
+        "prefix": "or",
+        "body": "\\vee",
+        "description": "vee"
+    },
+    "In": {
+        "prefix": "in",
+        "body": "\\in",
+        "description": "in"
+    },
+    "Subset": {
+        "prefix": "subset",
+        "body": "\\subseteq",
+        "description": "subseteq"
     },
     "alpha": {
         "prefix": ";a",
@@ -447,12 +472,12 @@
         "description": "pi"
     },
     "theta": {
-        "prefix": ";q",
+        "prefix": ";th",
         "body": "\\theta",
         "description": "theta"
     },
     "vartheta": {
-        "prefix": ";vq",
+        "prefix": ";vth",
         "body": "\\vartheta",
         "description": "vartheta"
     },
@@ -492,7 +517,7 @@
         "description": "xi"
     },
     "psi": {
-        "prefix": ";y",
+        "prefix": ";ps",
         "body": "\\psi",
         "description": "psi"
     },
@@ -517,7 +542,7 @@
         "description": "Gamma"
     },
     "Theta": {
-        "prefix": ";Q",
+        "prefix": ";Th",
         "body": "\\Theta",
         "description": "Theta"
     },
@@ -532,7 +557,7 @@
         "description": "Xi"
     },
     "Psi": {
-        "prefix": ";Y",
+        "prefix": ";Ps",
         "body": "\\Psi",
         "description": "Psi"
     },
