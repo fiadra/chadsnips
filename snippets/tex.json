@@ -32,17 +32,17 @@
         "description": ["Insert large fraction notation"]
     },
     "Italic Text": {
-        "prefix": ["italic", "\\italic", "*"],
+        "prefix": ["italic", "\\italic"],
         "body": "\\textit{$1}$0",
         "description": "Insert italic text."
     },
     "Bold Text": {
-        "prefix": ["bold", "\\bold", "**"],
+        "prefix": ["bold", "\\bold"],
         "body": "\\textbf{$1}$0",
         "description": "Insert bold text."
     },
     "Bold Italic Text": {
-        "prefix": ["bolditalic", "\\bolditalic", "***"],
+        "prefix": ["bolditalic", "\\bolditalic"],
         "body": "\\textbf{\\textit{$1}}$0",
         "description": "Insert bold italic text."
     },
@@ -567,7 +567,7 @@
         "description": "left[ ... right]"
     },
     "Algorithm": {
-        "prefix": "algo",
+        "prefix": "alg",
         "body": [
             "% \\usepackage{algorithm,algorithmicx,algpseudocode}",
             "\\begin{algorithm}",
