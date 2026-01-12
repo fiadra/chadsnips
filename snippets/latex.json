@@ -231,6 +231,36 @@
         "body": "\\partial",
         "description": "partial derivative symbol"
     },
+    "left arrow": {
+        "prefix": "larr",
+        "body": "\\leftarrow",
+        "description": "leftarrow"
+    },
+    "Left arrow": {
+        "prefix": "Larr",
+        "body": "\\Leftarrow",
+        "description": "Leftarrow"
+    },
+    "right arrow": {
+        "prefix": "rarr",
+        "body": "\\rightarrow",
+        "description": "rightarrow"
+    },
+    "Right arrow": {
+        "prefix": "Rarr",
+        "body": "\\Rightarrow",
+        "description": "rightarrow"
+    },
+    "leftright arrow": {
+        "prefix": "lrarr",
+        "body": "\\leftrightarrow",
+        "description": "leftrightarrow"
+    },
+    "Leftright arrow": {
+        "prefix": "Lrarr",
+        "body": "\\Leftrightarrow",
+        "description": "Leftrightarrow"
+    },
     "Hat": {
         "prefix": "hat",
         "body": "\\hat{${1:${TM_SELECTED_TEXT}}}$0",
@@ -291,15 +321,30 @@
         "body": "\\lim_{$1}$2",
         "description": "lim command"
     },
+    "Absolute Value": {
+        "prefix": "abs",
+        "body": "|${1:${TM_SELECTED_TEXT}}|$0",
+        "description": "abs command"
+    },
     "Norm": {
         "prefix": "norm",
         "body": "\\|${1:${TM_SELECTED_TEXT}}\\|$0",
         "description": "norm command"
     },
     "Big|": {
-        "prefix": "Big|",
+        "prefix": "bigabs",
         "body": "\\Big|",
         "description": "Big |"
+    },
+    "Cup": {
+        "prefix": "cup",
+        "body": "\\cup",
+        "description": "cup"
+    },
+    "Cap": {
+        "prefix": "cap",
+        "body": "\\cap",
+        "description": "cap"
     },
     "Bigcup": {
         "prefix": "bigcup",
@@ -360,6 +405,21 @@
         "prefix": "tt",
         "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "math typewriter font"
+    },
+    "Forall": {
+        "prefix": "forall",
+        "body": "\\forall",
+        "description": "forall"
+    },
+    "Exists": {
+        "prefix": "exists",
+        "body": "\\exists",
+        "description": "exists"
+    },
+    "Sim": {
+        "prefix": "dist",
+        "body": "\\sim",
+        "description": "sim"
     },
     "Models": {
         "prefix": "models",
@@ -427,7 +487,7 @@
         "description": "phi"
     },
     "varphi": {
-        "prefix": ";vf",
+        "prefix": ";vp",
         "body": "\\varphi",
         "description": "varphi"
     },
