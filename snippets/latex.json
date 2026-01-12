@@ -291,8 +291,13 @@
         "body": "\\ddot{${1:${TM_SELECTED_TEXT}}}$0",
         "description": "ddot"
     },
+    "Isomorphic": {
+        "prefix": "iso",
+        "body": "\\cong",
+        "description": "isomorphism symbol"
+    },
     "Equiv": {
-        "prefix": "==",
+        "prefix": "equiv",
         "body": "\\equiv",
         "description": "equiv symbol"
     },
