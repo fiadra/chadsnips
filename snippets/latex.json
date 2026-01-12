@@ -638,17 +638,17 @@
     },
     "(": {
         "prefix": ";(",
-        "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right)",
+        "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right",
         "description": "left( ... right)"
     },
     "{": {
         "prefix": ";{",
-        "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\\\}",
+        "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\",
         "description": "left{ ... right}"
     },
     "[": {
         "prefix": ";[",
-        "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right]",
+        "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right",
         "description": "left[ ... right]"
     },
     "Algorithm": {
