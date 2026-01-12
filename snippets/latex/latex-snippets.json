@@ -586,7 +586,7 @@
     },
     "Math": {
         "prefix": "math",
-        "body": ["\\begin{math}", "\t$1", "\\end{math}", "$0"],
+        "body": ["\\( $1 \\)$0"],
         "description": "Add a Math"
     },
     "DisplayMath": {
