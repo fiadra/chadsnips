@@ -98,7 +98,7 @@
         "description": "Insert a problem, whose style is already defined in the template. The serial number is automatically generated according to the section."
     },
     "Definition": {
-        "prefix": ["definition", "\\definition"],
+        "prefix": ["def", "\\def"],
         "body": [
             "\\begin{definition}[${1:name of the definition}]",
             "\t$0",
@@ -272,24 +272,24 @@
         "description": "times symbol"
     },
     "Leq": {
-        "prefix": ";<",
+        "prefix": "<=",
         "body": "\\leq",
         "description": "leq symbol"
     },
     "Geq": {
-        "prefix": ";>",
+        "prefix": ">=",
         "body": "\\geq",
         "description": "geq symbol"
     },
     "Sqrt": {
-        "prefix": ";2",
+        "prefix": "sqrt",
         "body": "\\sqrt{${1:${TM_SELECTED_TEXT}}}$0",
         "description": "sqrt command"
     },
     "Lim": {
         "prefix": "lim",
-        "body": "\\lim_{$1}^{$2}${1:${TM_SELECTED_TEXT}}$0",
-        "description": "sqrt command"
+        "body": "\\lim_{$1}^{$2}$3",
+        "description": "lim command"
     },
     "Norm": {
         "prefix": "norm",
@@ -337,27 +337,27 @@
         "description": "Make text lowercase (no caps)"
     },
     "Mathbf": {
-        "prefix": "mbf",
+        "prefix": "bf",
         "body": "\\mathbf{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "math bold font"
     },
     "Mathbb": {
-        "prefix": "mbb",
+        "prefix": "bb",
         "body": "\\mathbb{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "math blackboard bold font"
     },
     "Mathcal": {
-        "prefix": "mcal",
+        "prefix": "cal",
         "body": "\\mathcal{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "math caligraphic font"
     },
     "Mathit": {
-        "prefix": "mit",
+        "prefix": "it",
         "body": "\\mathit{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "math italic font"
     },
     "Mathtt": {
-        "prefix": "mtt",
+        "prefix": "tt",
         "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}}",
         "description": "math typewriter font"
     },
@@ -552,17 +552,17 @@
         "description": "Omega"
     },
     "(": {
-        "prefix": "@(",
+        "prefix": ";(",
         "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right)",
         "description": "left( ... right)"
     },
     "{": {
-        "prefix": "@{",
+        "prefix": ";{",
         "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\\\}",
         "description": "left{ ... right}"
     },
     "[": {
-        "prefix": "@[",
+        "prefix": ";[",
         "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right]",
         "description": "left[ ... right]"
     },
