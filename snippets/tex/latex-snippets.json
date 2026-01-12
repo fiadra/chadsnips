@@ -286,9 +286,14 @@
         "body": "\\sqrt{${1:${TM_SELECTED_TEXT}}}$0",
         "description": "sqrt command"
     },
+    "Lim": {
+        "prefix": "lim",
+        "body": "\\lim_{$1}^{$2}${1:${TM_SELECTED_TEXT}}$0",
+        "description": "sqrt command"
+    },
     "Norm": {
         "prefix": "norm",
-        "body": "\| ${1:${TM_SELECTED_TEXT}} \|$0",
+        "body": "\\| ${1:${TM_SELECTED_TEXT}} \\|$0",
         "description": "norm command"
     },
     "Big|": {
