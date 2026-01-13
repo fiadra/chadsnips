@@ -463,187 +463,187 @@
     },
     "alpha": {
         "prefix": ";a",
-        "body": "\\alpha",
+        "body": "\\alpha$0",
         "description": "alpha"
     },
     "beta": {
         "prefix": ";b",
-        "body": "\\beta",
+        "body": "\\beta$0",
         "description": "beta"
     },
     "chi": {
         "prefix": ";c",
-        "body": "\\chi",
+        "body": "\\chi$0",
         "description": "chi"
     },
     "delta": {
         "prefix": ";d",
-        "body": "\\delta",
+        "body": "\\delta$0",
         "description": "delta"
     },
     "epsilon": {
         "prefix": ";e",
-        "body": "\\epsilon",
+        "body": "\\epsilon$0",
         "description": "epsilon"
     },
     "varepsilon": {
         "prefix": ";ve",
-        "body": "\\varepsilon",
+        "body": "\\varepsilon$0",
         "description": "varepsilon"
     },
     "phi": {
         "prefix": ";f",
-        "body": "\\phi",
+        "body": "\\phi$0",
         "description": "phi"
     },
     "varphi": {
         "prefix": ";vp",
-        "body": "\\varphi",
+        "body": "\\varphi$0",
         "description": "varphi"
     },
     "gamma": {
         "prefix": ";g",
-        "body": "\\gamma",
+        "body": "\\gamma$0",
         "description": "gamma"
     },
     "eta": {
         "prefix": ";h",
-        "body": "\\eta",
+        "body": "\\eta$0",
         "description": "eta"
     },
     "iota": {
         "prefix": ";i",
-        "body": "\\iota",
+        "body": "\\iota$0",
         "description": "iota"
     },
     "kappa": {
         "prefix": ";k",
-        "body": "\\kappa",
+        "body": "\\kappa$0",
         "description": "kappa"
     },
     "lambda": {
         "prefix": ";l",
-        "body": "\\lambda",
+        "body": "\\lambda$0",
         "description": "lambda"
     },
     "mu": {
         "prefix": ";m",
-        "body": "\\mu",
+        "body": "\\mu$0",
         "description": "mu"
     },
     "nu": {
         "prefix": ";n",
-        "body": "\\nu",
+        "body": "\\nu$0",
         "description": "nu"
     },
     "pi": {
         "prefix": ";p",
-        "body": "\\pi",
+        "body": "\\pi$0",
         "description": "pi"
     },
     "theta": {
         "prefix": ";th",
-        "body": "\\theta",
+        "body": "\\theta$0",
         "description": "theta"
     },
     "vartheta": {
         "prefix": ";vth",
-        "body": "\\vartheta",
+        "body": "\\vartheta$0",
         "description": "vartheta"
     },
     "rho": {
         "prefix": ";r",
-        "body": "\\rho",
+        "body": "\\rho$0",
         "description": "rho"
     },
     "sigma": {
         "prefix": ";s",
-        "body": "\\sigma",
+        "body": "\\sigma$0",
         "description": "sigma"
     },
     "varsigma": {
         "prefix": ";vs",
-        "body": "\\varsigma",
+        "body": "\\varsigma$0",
         "description": "varsigma"
     },
     "tau": {
         "prefix": ";t",
-        "body": "\\tau",
+        "body": "\\tau$0",
         "description": "tau"
     },
     "upsilon": {
         "prefix": ";u",
-        "body": "\\upsilon",
+        "body": "\\upsilon$0",
         "description": "upsilon"
     },
     "omega": {
         "prefix": ";o",
-        "body": "\\omega",
+        "body": "\\omega$0",
         "description": "omega"
     },
     "xi": {
         "prefix": ";x",
-        "body": "\\xi",
+        "body": "\\xi$0",
         "description": "xi"
     },
     "psi": {
         "prefix": ";ps",
-        "body": "\\psi",
+        "body": "\\psi$0",
         "description": "psi"
     },
     "zeta": {
         "prefix": ";z",
-        "body": "\\zeta",
+        "body": "\\zeta$0",
         "description": "zeta"
     },
     "Delta": {
         "prefix": ";D",
-        "body": "\\Delta",
+        "body": "\\Delta$0",
         "description": "Delta"
     },
     "Phi": {
         "prefix": ";F",
-        "body": "\\Phi",
+        "body": "\\Phi$0",
         "description": "Phi"
     },
     "Gamma": {
         "prefix": ";G",
-        "body": "\\Gamma",
+        "body": "\\Gamma$0",
         "description": "Gamma"
     },
     "Theta": {
         "prefix": ";Th",
-        "body": "\\Theta",
+        "body": "\\Theta$0",
         "description": "Theta"
     },
     "Lambda": {
         "prefix": ";L",
-        "body": "\\Lambda",
+        "body": "\\Lambda$0",
         "description": "Lambda"
     },
     "Xi": {
         "prefix": ";X",
-        "body": "\\Xi",
+        "body": "\\Xi$0",
         "description": "Xi"
     },
     "Psi": {
         "prefix": ";Ps",
-        "body": "\\Psi",
+        "body": "\\Psi$0",
         "description": "Psi"
     },
     "Sigma": {
         "prefix": ";S",
-        "body": "\\Sigma",
+        "body": "\\Sigma$0",
         "description": "Sigma"
     },
     "Upsilon": {
         "prefix": ";U",
-        "body": "\\Upsilon",
+        "body": "\\Upsilon$0",
         "description": "Upsilon"
     },
     "Omega": {
         "prefix": ";W",
-        "body": "\\Omega",
+        "body": "\\Omega$0",
         "description": "Omega"
     },
     "(": {
@@ -660,6 +660,11 @@
         "prefix": ";[",
         "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right",
         "description": "left[ ... right]"
+    },
+    "Set": {
+        "prefix": "set",
+        "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\",
+        "description": "left{ : right}"
     },
     "Algorithm": {
         "prefix": "alg",
