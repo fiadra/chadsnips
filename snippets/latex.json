@@ -98,6 +98,33 @@
         ],
         "description": "Insert a theorem, whose style is already defined in the template. The serial number is automatically generated according to the section."
     },
+    "Lemma": {
+        "prefix": ["lemma", "\\lemma"],
+        "body": [
+            "\\begin{lemma}[${1:name of the lemma}]",
+            "\t$0",
+            "\\end{lemma}"
+        ],
+        "description": "Insert a lemma, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
+    "Fact": {
+        "prefix": ["fact", "\\fact"],
+        "body": [
+            "\\begin{fact}",
+            "\t$0",
+            "\\end{fact}"
+        ],
+        "description": "Insert a fact, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
+    "Corollary": {
+        "prefix": ["corollary", "\\corollary"],
+        "body": [
+            "\\begin{corollary}",
+            "\t$0",
+            "\\end{corollary}"
+        ],
+        "description": "Insert a corollary, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
     "Problem": {
         "prefix": ["problem", "\\problem"],
         "body": [
@@ -330,6 +357,16 @@
         "prefix": "sqrt",
         "body": "\\sqrt{${1:${TM_SELECTED_TEXT}}}$0",
         "description": "sqrt command"
+    },
+    "Min": {
+        "prefix": "min",
+        "body": "\\min$1",
+        "description": "min command"
+    },
+    "Max": {
+        "prefix": "max",
+        "body": "\\max$1",
+        "description": "max command"
     },
     "Lim": {
         "prefix": "lim",
