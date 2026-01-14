@@ -239,63 +239,63 @@
         "description": "\\item on a newline"
     },
     "Subscript": {
-        "prefix": " __",
+        "prefix": ["__", "sub", "\\sup"],
         "body": "_{${1:${TM_SELECTED_TEXT}}}",
         "description": "subscript"
     },
     "Superscript": {
-        "prefix": " **",
+        "prefix": ["**", "sup", "\\sup"],
         "body": "^{${1:${TM_SELECTED_TEXT}}}",
         "description": "superscript"
     },
     "Etc": {
-        "prefix": "dots",
-        "body": "\\dots",
+        "prefix": ["dots", "\\dots"],
+        "body": "\\dots$0",
         "description": "\\dots"
     },
     "Cdot": {
         "prefix": "cdot",
-        "body": "\\cdot",
+        "body": "\\cdot$0",
         "description": "\\cdot"
     },
     "Infinity": {
         "prefix": "inf",
-        "body": "\\infty",
+        "body": "\\infty$0",
         "description": "infinity symbol"
     },
     "Partial": {
         "prefix": ";6",
-        "body": "\\partial",
+        "body": "\\partial$0",
         "description": "partial derivative symbol"
     },
     "left arrow": {
         "prefix": "larr",
-        "body": "\\leftarrow",
+        "body": "\\leftarrow$0",
         "description": "leftarrow"
     },
     "Left arrow": {
         "prefix": "Larr",
-        "body": "\\Leftarrow",
+        "body": "\\Leftarrow$0",
         "description": "Leftarrow"
     },
     "right arrow": {
         "prefix": "rarr",
-        "body": "\\rightarrow",
+        "body": "\\rightarrow$0",
         "description": "rightarrow"
     },
     "Right arrow": {
         "prefix": "Rarr",
-        "body": "\\Rightarrow",
+        "body": "\\Rightarrow$0",
         "description": "rightarrow"
     },
     "leftright arrow": {
         "prefix": "lrarr",
-        "body": "\\leftrightarrow",
+        "body": "\\leftrightarrow$0",
         "description": "leftrightarrow"
     },
     "Leftright arrow": {
         "prefix": "Lrarr",
-        "body": "\\Leftrightarrow",
+        "body": "\\Leftrightarrow$0",
         "description": "Leftrightarrow"
     },
     "Hat": {
@@ -310,12 +310,12 @@
     },
     "Circ": {
         "prefix": "circ",
-        "body": "\\circ",
+        "body": "\\circ$0",
         "description": "circ"
     },
     "Supcirc": {
         "prefix": "supcirc",
-        "body": "^\\circ",
+        "body": "^\\circ$0",
         "description": "superscript circ"
     },
     "Dot": {
@@ -330,27 +330,27 @@
     },
     "Isomorphic": {
         "prefix": "iso",
-        "body": "\\cong",
+        "body": "\\cong$0",
         "description": "isomorphism symbol"
     },
     "Equiv": {
         "prefix": "equiv",
-        "body": "\\equiv",
+        "body": "\\equiv$0",
         "description": "equiv symbol"
     },
     "Times": {
         "prefix": ";*",
-        "body": "\\times",
+        "body": "\\times$0",
         "description": "times symbol"
     },
     "Leq": {
         "prefix": "<=",
-        "body": "\\leq",
+        "body": "\\leq$0",
         "description": "leq symbol"
     },
     "Geq": {
         "prefix": ">=",
-        "body": "\\geq",
+        "body": "\\geq$0",
         "description": "geq symbol"
     },
     "Sqrt": {
@@ -360,17 +360,17 @@
     },
     "Min": {
         "prefix": "min",
-        "body": "\\min$1",
+        "body": "\\min$0",
         "description": "min command"
     },
     "Max": {
         "prefix": "max",
-        "body": "\\max$1",
+        "body": "\\max$0",
         "description": "max command"
     },
     "Lim": {
         "prefix": "lim",
-        "body": "\\lim_{$1}$2",
+        "body": "\\lim_{$1}$0",
         "description": "lim command"
     },
     "Absolute Value": {
@@ -385,122 +385,122 @@
     },
     "Big|": {
         "prefix": "bigabs",
-        "body": "\\Big|",
+        "body": "\\Big|$0",
         "description": "Big |"
     },
     "Cup": {
         "prefix": "cup",
-        "body": "\\cup",
+        "body": "\\cup$0",
         "description": "cup"
     },
     "Cap": {
         "prefix": "cap",
-        "body": "\\cap",
+        "body": "\\cap$0",
         "description": "cap"
     },
     "Bigcup": {
         "prefix": "bigcup",
-        "body": "\\bigcup",
+        "body": "\\bigcup$0",
         "description": "bigcup"
     },
     "Bigcap": {
         "prefix": "bigcap",
-        "body": "\\bigcap",
+        "body": "\\bigcap$0",
         "description": "bigcap"
     },
     "Nonumber": {
         "prefix": "nonumber",
-        "body": "\\nonumber",
+        "body": "\\nonumber$0",
         "description": "nonumber"
     },
     "Emph": {
         "prefix": "emph",
-        "body": "\\emph{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\emph{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "emphasis font"
     },
     "Underline": {
         "prefix": "underline",
-        "body": "\\underline{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\underline{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "Underline text"
     },
     "Uppercase": {
         "prefix": "uppercase",
-        "body": "\\uppercase{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\uppercase{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "Make text uppercase (all caps)"
     },
     "Lowercase": {
         "prefix": "lowercase",
-        "body": "\\lowercase{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\lowercase{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "Make text lowercase (no caps)"
     },
     "Mathbf": {
         "prefix": "bf",
-        "body": "\\mathbf{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\mathbf{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "math bold font"
     },
     "Mathbb": {
         "prefix": "bb",
-        "body": "\\mathbb{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\mathbb{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "math blackboard bold font"
     },
     "Mathcal": {
         "prefix": "cal",
-        "body": "\\mathcal{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\mathcal{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "math caligraphic font"
     },
     "Mathit": {
         "prefix": "it",
-        "body": "\\mathit{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\mathit{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "math italic font"
     },
     "Mathtt": {
         "prefix": "tt",
-        "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}}",
+        "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}}$0",
         "description": "math typewriter font"
     },
     "Forall": {
         "prefix": "forall",
-        "body": "\\forall",
+        "body": "\\forall$0",
         "description": "forall"
     },
     "Exists": {
         "prefix": "exists",
-        "body": "\\exists",
+        "body": "\\exists$0",
         "description": "exists"
     },
     "Sim": {
         "prefix": "dist",
-        "body": "\\sim",
+        "body": "\\sim$0",
         "description": "sim"
     },
     "Models": {
         "prefix": "models",
-        "body": "\\vDash",
+        "body": "\\vDash$0",
         "description": "models"
     },
     "Proves": {
         "prefix": "proves",
-        "body": "\\vdash",
+        "body": "\\vdash$0",
         "description": "proves"
     },
     "Wedge": {
         "prefix": "and",
-        "body": "\\wedge",
+        "body": "\\wedge$0",
         "description": "wedge"
     },
     "Vee": {
         "prefix": "or",
-        "body": "\\vee",
+        "body": "\\vee$0",
         "description": "vee"
     },
     "In": {
         "prefix": "in",
-        "body": "\\in",
+        "body": "\\in$0",
         "description": "in"
     },
     "Subset": {
         "prefix": "subset",
-        "body": "\\subseteq",
+        "body": "\\subseteq$0",
         "description": "subseteq"
     },
     "Aleph": {
@@ -520,7 +520,7 @@
     },
     "Omega1": {
         "prefix": "omega1",
-        "body": "\\omega_{1}",
+        "body": "\\omega_{1}$0",
         "description": "omega1"
     },
     "alpha": {
