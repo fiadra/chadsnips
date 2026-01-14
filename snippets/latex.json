@@ -239,13 +239,13 @@
         "description": "\\item on a newline"
     },
     "Subscript": {
-        "prefix": ["__", "sub", "\\sup"],
-        "body": "_{${1:${TM_SELECTED_TEXT}}}",
+        "prefix": "sub",
+        "body": "_{${1:${TM_SELECTED_TEXT}}}$0",
         "description": "subscript"
     },
     "Superscript": {
-        "prefix": ["**", "sup", "\\sup"],
-        "body": "^{${1:${TM_SELECTED_TEXT}}}",
+        "prefix": "sup",
+        "body": "^{${1:${TM_SELECTED_TEXT}}}$0",
         "description": "superscript"
     },
     "Etc": {
