@@ -518,6 +518,11 @@
         "body": "2^{\\aleph_{0}}$0",
         "description": "continuum"
     },
+    "Omega1": {
+        "prefix": "omega1",
+        "body": "\\omega_{1}",
+        "description": "omega1"
+    },
     "alpha": {
         "prefix": ";a",
         "body": "\\alpha$0",
