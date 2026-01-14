@@ -51,6 +51,11 @@
         "body": "\\textbf{\\textit{$1}}$0",
         "description": "Insert bold italic text."
     },
+    "Operator": {
+        "prefix": ["operator", "\\operator"],
+        "body": "\\operatorname{$1}$0",
+        "description": "Insert an operator"
+    },
     "Section": {
         "prefix": ["section", "\\section"],
         "body": ["\\section{$1}$0"],
@@ -460,6 +465,21 @@
         "prefix": "subset",
         "body": "\\subseteq",
         "description": "subseteq"
+    },
+    "Aleph": {
+        "prefix": ";aleph",
+        "body": "\\aleph$0",
+        "description": "aleph"
+    },
+    "Aleph0": {
+        "prefix": ";aleph0",
+        "body": "\\aleph_{0}$0",
+        "description": "aleph0"
+    },
+    "Continuum": {
+        "prefix": "cont",
+        "body": "2^{\aleph_{0}}$0",
+        "description": "continuum"
     },
     "alpha": {
         "prefix": ";a",
