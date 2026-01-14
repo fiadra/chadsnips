@@ -467,18 +467,18 @@
         "description": "subseteq"
     },
     "Aleph": {
-        "prefix": ";aleph",
+        "prefix": "aleph",
         "body": "\\aleph$0",
         "description": "aleph"
     },
     "Aleph0": {
-        "prefix": ";aleph0",
+        "prefix": "aleph0",
         "body": "\\aleph_{0}$0",
         "description": "aleph0"
     },
     "Continuum": {
         "prefix": "cont",
-        "body": "2^{\aleph_{0}}$0",
+        "body": "2^{\\aleph_{0}}$0",
         "description": "continuum"
     },
     "alpha": {
