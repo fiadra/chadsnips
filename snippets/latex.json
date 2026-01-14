@@ -125,6 +125,15 @@
         ],
         "description": "Insert a corollary, whose style is already defined in the template. The serial number is automatically generated according to the section."
     },
+    "Remark": {
+        "prefix": ["remark", "\\remark"],
+        "body": [
+            "\\begin{remark}",
+            "\t$0",
+            "\\end{remark}"
+        ],
+        "description": "Insert a remark, whose style is already defined in the template. The serial number is automatically generated according to the section."
+    },
     "Problem": {
         "prefix": ["problem", "\\problem"],
         "body": [
@@ -267,6 +276,11 @@
         "prefix": ";6",
         "body": "\\partial$0",
         "description": "partial derivative symbol"
+    },
+    "Maps to": {
+        "prefix": "mapsto",
+        "body": "\\mapsto$0",
+        "description": "mapsto"
     },
     "left arrow": {
         "prefix": "larr",
@@ -725,7 +739,7 @@
     },
     "Set": {
         "prefix": "set",
-        "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\",
+        "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\}$0",
         "description": "left{ : right}"
     },
     "Algorithm": {
