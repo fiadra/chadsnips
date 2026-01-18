@@ -191,7 +191,7 @@
     },
     "Math": {
         "prefix": ["m", "math"],
-        "body": ["\\($1\\)$0"],
+        "body": ["\\( $1 \\)$0"],
         "description": "Add some Math"
     },
     "DisplayMath": {
@@ -210,12 +210,12 @@
         "description": "Add a Equation"
     },
     "Display Math — \\[ … \\]": {
-        "prefix": "$$",
+        "prefix": ["mm", "$$"],
         "body": ["\\[", "\t$TM_SELECTED_TEXT$1", "\\]"],
         "description": "Display Math"
     },
     "Align(ed)": {
-        "prefix": "ali",
+        "prefix": "align",
         "body": ["\\begin{align}", "\t$0", "\\end{align}"],
         "description": "Align(ed)"
     },
