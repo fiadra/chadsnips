@@ -130,7 +130,7 @@
         "body": [
             "\\begin{remark}",
             "\t$0",
-            "\\end{remark}"
+            "\\end{times}"
         ],
         "description": "Insert a remark, whose style is already defined in the template. The serial number is automatically generated according to the section."
     },
@@ -191,7 +191,7 @@
     },
     "Math": {
         "prefix": "math",
-        "body": ["\\($1\\) $0"],
+        "body": ["\\($1\\)$0"],
         "description": "Add some Math"
     },
     "DisplayMath": {
@@ -341,6 +341,16 @@
         "prefix": "ddot",
         "body": "\\ddot{${1:${TM_SELECTED_TEXT}}} $0",
         "description": "ddot"
+    },
+    "Times": {
+        "prefix": "times",
+        "body": "\\times $0",
+        "description": "times"
+    },
+    "Neq": {
+        "prefix": "neq",
+        "body": "\\neq $0",
+        "description": "neq symbol"
     },
     "Isomorphic": {
         "prefix": "iso",
@@ -749,8 +759,8 @@
     },
     "Innerprod": {
         "prefix": "innerprod",
-        "body": "\\langle $1, $2 \\rangle  $0",
-        "description": "left[ ... right]"
+        "body": "\\langle $1, $2 \\rangle $0",
+        "description": "\\langle , \\rangle]"
     },
     "Set": {
         "prefix": "set",
