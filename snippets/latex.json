@@ -372,6 +372,16 @@
         "body": "\\sqrt{${1:${TM_SELECTED_TEXT}}}$0",
         "description": "sqrt command"
     },
+    "Exp": {
+        "prefix": "exp",
+        "body": "\\exp{${1:${TM_SELECTED_TEXT}}}$0",
+        "description": "exp command"
+    },
+    "Log": {
+        "prefix": "log",
+        "body": "\\log{${1:${TM_SELECTED_TEXT}}}$0",
+        "description": "log command"
+    },
     "Min": {
         "prefix": "min",
         "body": "\\min$0",
