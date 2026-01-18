@@ -190,7 +190,7 @@
         "description": "Description"
     },
     "Math": {
-        "prefix": "math",
+        "prefix": ["m", "math"],
         "body": ["\\($1\\)$0"],
         "description": "Add some Math"
     },
@@ -404,7 +404,7 @@
     },
     "Absolute Value": {
         "prefix": "abs",
-        "body": "|${1:${TM_SELECTED_TEXT}}| $0",
+        "body": "| ${1:${TM_SELECTED_TEXT}} | $0",
         "description": "abs command"
     },
     "Norm": {
