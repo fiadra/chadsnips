@@ -374,12 +374,12 @@
     },
     "Exp": {
         "prefix": "exp",
-        "body": "\\exp{${1:${TM_SELECTED_TEXT}}}$0",
+        "body": "\\exp(${1:${TM_SELECTED_TEXT}})$0",
         "description": "exp command"
     },
     "Log": {
         "prefix": "log",
-        "body": "\\log{${1:${TM_SELECTED_TEXT}}}$0",
+        "body": "\\log(${1:${TM_SELECTED_TEXT}})$0",
         "description": "log command"
     },
     "Min": {
