@@ -130,7 +130,7 @@
         "body": [
             "\\begin{remark}",
             "\t$0",
-            "\\end{times}"
+            "\\end{remark}"
         ],
         "description": "Insert a remark, whose style is already defined in the template. The serial number is automatically generated according to the section."
     },
@@ -361,11 +361,6 @@
         "prefix": "equiv",
         "body": "\\equiv $0",
         "description": "equiv symbol"
-    },
-    "Times": {
-        "prefix": ";*",
-        "body": "\\times $0",
-        "description": "times symbol"
     },
     "Leq": {
         "prefix": "<=",
