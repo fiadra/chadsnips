@@ -518,7 +518,7 @@
   },
   "Exp": {
     "prefix": "exp",
-    "body": "\\exp(${1:${TM_SELECTED_TEXT}})$0",
+    "body": "\\exp\\left(${1:${TM_SELECTED_TEXT}\\right})$0",
     "description": "exp command"
   },
   "Log": {
