@@ -5,7 +5,7 @@
       "\\bigsum"
     ],
     "body": [
-      "\\displaystyle\\sum_{$1}^{$2} $0"
+      "\\displaystyle\\sum_{$1}^{$2}$0"
     ],
     "description": "Insert a large summation notation."
   },
@@ -15,7 +15,7 @@
       "\\sum"
     ],
     "body": [
-      "\\sum_{$1}^{$2} $0"
+      "\\sum_{$1}^{$2}$0"
     ],
     "description": "Insert an inline summation notation, (only in the cases when the environment is inline math environment)."
   },
@@ -25,7 +25,7 @@
       "\\bigprod"
     ],
     "body": [
-      "\\displaystyle\\prod_{$1}^{$2} $0"
+      "\\displaystyle\\prod_{$1}^{$2}$0"
     ],
     "description": "Insert a large summation notation."
   },
@@ -35,7 +35,7 @@
       "\\prod"
     ],
     "body": [
-      "\\prod_{$1}^{$2} $0"
+      "\\prod_{$1}^{$2}$0"
     ],
     "description": "Insert an inline summation notation, (only in the cases when the environment is inline math environment)."
   },
@@ -45,7 +45,7 @@
       "\\bigint"
     ],
     "body": [
-      "\\displaystyle\\int_{$1}^{$2} $0"
+      "\\displaystyle\\int_{$1}^{$2}$0"
     ],
     "description": "Insert large integral notation."
   },
@@ -55,7 +55,7 @@
       "\\int"
     ],
     "body": [
-      "\\int_{$1}^{$2} $0"
+      "\\int_{$1}^{$2}$0"
     ],
     "description": "Insert inline integral notation, (only in the cases when the environment is inline math environment)."
   },
@@ -65,7 +65,7 @@
       "\\frac"
     ],
     "body": [
-      "\\frac{$1}{$2} $0"
+      "\\frac{$1}{$2}$0"
     ],
     "description": [
       "Insert inline fraction notation, (only in the cases when the environment is inline math environment)."
@@ -77,7 +77,7 @@
       "\\fraclarge"
     ],
     "body": [
-      "\\displaystyle\\frac{$1}{$2} $0"
+      "\\displaystyle\\frac{$1}{$2}$0"
     ],
     "description": [
       "Insert large fraction notation"
@@ -88,7 +88,7 @@
       "text",
       "\\text"
     ],
-    "body": "\\text{$1} $0",
+    "body": "\\text{$1}$0",
     "description": "Insert inline text."
   },
   "Italic Text": {
@@ -96,7 +96,7 @@
       "italic",
       "\\italic"
     ],
-    "body": "\\textit{$1} $0",
+    "body": "\\textit{$1}$0",
     "description": "Insert italic text."
   },
   "Bold Text": {
@@ -104,7 +104,7 @@
       "bold",
       "\\bold"
     ],
-    "body": "\\textbf{$1} $0",
+    "body": "\\textbf{$1}$0",
     "description": "Insert bold text."
   },
   "Bold Italic Text": {
@@ -112,7 +112,7 @@
       "bolditalic",
       "\\bolditalic"
     ],
-    "body": "\\textbf{\\textit{$1}} $0",
+    "body": "\\textbf{\\textit{$1}}$0",
     "description": "Insert bold italic text."
   },
   "Operator": {
@@ -120,7 +120,7 @@
       "operator",
       "\\operator"
     ],
-    "body": "\\operatorname{$1} $0",
+    "body": "\\operatorname{$1}$0",
     "description": "Insert an operator"
   },
   "Section": {
@@ -129,7 +129,7 @@
       "\\section"
     ],
     "body": [
-      "\\section{$1} $0"
+      "\\section{$1}$0"
     ],
     "description": "Insert a new section."
   },
@@ -139,7 +139,7 @@
       "\\subsection"
     ],
     "body": [
-      "\\subsection{$1} $0"
+      "\\subsection{$1}$0"
     ],
     "description": "Insert a new subsection."
   },
@@ -155,7 +155,7 @@
   "Page": {
     "prefix": "page",
     "body": [
-      "${1:page}~\\pageref{$2} $0"
+      "${1:page}~\\pageref{$2}$0"
     ],
     "description": "Page"
   },
@@ -288,14 +288,14 @@
     "body": [
       "\\begin{itemize}",
       "\t\\item $1",
-      "\\end{itemize} $0"
+      "\\end{itemize}$0"
     ]
   },
   "Description": {
     "prefix": "desc",
     "body": [
       "\\\\begin{description}",
-      "\t\\item[$1]  $0",
+      "\t\\item[$1] $0",
       "\\\\end{description}"
     ],
     "description": "Description"
@@ -315,7 +315,7 @@
       "\\begin{displaymath}",
       "\t$1",
       "\\end{displaymath}",
-      " $0"
+      "$0"
     ],
     "description": "Display Math"
   },
@@ -354,7 +354,7 @@
     "prefix": "mat",
     "body": [
       "\\begin{${1:p/b/v/V/B/small}matrix}",
-      "\t $0",
+      "\t$0",
       "\\end{${1:p/b/v/V/B/small}matrix}"
     ],
     "description": "Matrix"
@@ -363,7 +363,7 @@
     "prefix": "begin",
     "body": [
       "\\\\begin{${1:env}}",
-      "\t${1/(enumerate|itemize|list)|(description)|(.*)/${1:+\\item }${2:+\\item[] }${3:+}/} $0",
+      "\t${1/(enumerate|itemize|list)|(description)|(.*)/${1:+\\item }${2:+\\item[] }${3:+}/}$0",
       "\\\\end{${1:env}}"
     ],
     "description": "Begin - End"
@@ -385,12 +385,12 @@
   },
   "Subscript": {
     "prefix": "sub",
-    "body": "_{${1:${TM_SELECTED_TEXT}}} $0",
+    "body": "_{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "subscript"
   },
   "Superscript": {
     "prefix": "sup",
-    "body": "^{${1:${TM_SELECTED_TEXT}}} $0",
+    "body": "^{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "superscript"
   },
   "Etc": {
@@ -398,482 +398,482 @@
       "dots",
       "\\dots"
     ],
-    "body": "\\dots $0",
+    "body": "\\dots$0",
     "description": "\\dots"
   },
   "Cdot": {
     "prefix": "cdot",
-    "body": "\\cdot $0",
+    "body": "\\cdot$0",
     "description": "\\cdot"
   },
   "Infinity": {
     "prefix": "inf",
-    "body": "\\infty $0",
+    "body": "\\infty$0",
     "description": "infinity symbol"
   },
   "Partial": {
     "prefix": ";6",
-    "body": "\\partial $0",
+    "body": "\\partial$0",
     "description": "partial derivative symbol"
   },
   "Maps to": {
     "prefix": "mapsto",
-    "body": "\\mapsto $0",
+    "body": "\\mapsto$0",
     "description": "mapsto"
   },
   "left arrow": {
     "prefix": "larr",
-    "body": "\\leftarrow $0",
+    "body": "\\leftarrow$0",
     "description": "leftarrow"
   },
   "Left arrow": {
     "prefix": "Larr",
-    "body": "\\Leftarrow $0",
+    "body": "\\Leftarrow$0",
     "description": "Leftarrow"
   },
   "right arrow": {
     "prefix": "rarr",
-    "body": "\\rightarrow $0",
+    "body": "\\rightarrow$0",
     "description": "rightarrow"
   },
   "Right arrow": {
     "prefix": "Rarr",
-    "body": "\\Rightarrow $0",
+    "body": "\\Rightarrow$0",
     "description": "rightarrow"
   },
   "leftright arrow": {
     "prefix": "lrarr",
-    "body": "\\leftrightarrow $0",
+    "body": "\\leftrightarrow$0",
     "description": "leftrightarrow"
   },
   "Leftright arrow": {
     "prefix": "Lrarr",
-    "body": "\\Leftrightarrow $0",
+    "body": "\\Leftrightarrow$0",
     "description": "Leftrightarrow"
   },
   "Hat": {
     "prefix": "hat",
-    "body": "\\hat{${1:${TM_SELECTED_TEXT}}} $0",
+    "body": "\\hat{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "hat"
   },
   "Bar": {
     "prefix": "bar",
-    "body": "\\bar{${1:${TM_SELECTED_TEXT}}} $0",
+    "body": "\\bar{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "bar"
   },
   "Circ": {
     "prefix": "circ",
-    "body": "\\circ $0",
+    "body": "\\circ$0",
     "description": "circ"
   },
   "Supcirc": {
     "prefix": "supcirc",
-    "body": "^\\circ $0",
+    "body": "^\\circ$0",
     "description": "superscript circ"
   },
   "Dot": {
     "prefix": "dot",
-    "body": "\\dot{${1:${TM_SELECTED_TEXT}}} $0",
+    "body": "\\dot{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "dot"
   },
   "Ddot": {
     "prefix": "ddot",
-    "body": "\\ddot{${1:${TM_SELECTED_TEXT}}} $0",
+    "body": "\\ddot{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "ddot"
   },
   "Times": {
     "prefix": "times",
-    "body": "\\times $0",
+    "body": "\\times$0",
     "description": "times"
   },
   "Neq": {
     "prefix": "neq",
-    "body": "\\neq $0",
+    "body": "\\neq$0",
     "description": "neq symbol"
   },
   "Isomorphic": {
     "prefix": "iso",
-    "body": "\\cong $0",
+    "body": "\\cong$0",
     "description": "isomorphism symbol"
   },
   "Equiv": {
     "prefix": "equiv",
-    "body": "\\equiv $0",
+    "body": "\\equiv$0",
     "description": "equiv symbol"
   },
   "Leq": {
     "prefix": "<=",
-    "body": "\\leq $0",
+    "body": "\\leq$0",
     "description": "leq symbol"
   },
   "Geq": {
     "prefix": ">=",
-    "body": "\\geq $0",
+    "body": "\\geq$0",
     "description": "geq symbol"
   },
   "Sqrt": {
     "prefix": "sqrt",
-    "body": "\\sqrt{${1:${TM_SELECTED_TEXT}}} $0",
+    "body": "\\sqrt{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "sqrt command"
   },
   "Exp": {
     "prefix": "exp",
-    "body": "\\exp(${1:${TM_SELECTED_TEXT}}) $0",
+    "body": "\\exp(${1:${TM_SELECTED_TEXT}})$0",
     "description": "exp command"
   },
   "Log": {
     "prefix": "log",
-    "body": "\\log(${1:${TM_SELECTED_TEXT}}) $0",
+    "body": "\\log(${1:${TM_SELECTED_TEXT}})$0",
     "description": "log command"
   },
   "Min": {
     "prefix": "min",
-    "body": "\\min $0",
+    "body": "\\min$0",
     "description": "min command"
   },
   "Max": {
     "prefix": "max",
-    "body": "\\max $0",
+    "body": "\\max$0",
     "description": "max command"
   },
   "Lim": {
     "prefix": "lim",
-    "body": "\\lim_{$1} $0",
+    "body": "\\lim_{$1}$0",
     "description": "lim command"
   },
   "Absolute Value": {
     "prefix": "abs",
-    "body": "| ${1:${TM_SELECTED_TEXT}} | $0",
+    "body": "| ${1:${TM_SELECTED_TEXT}} |$0",
     "description": "abs command"
   },
   "Norm": {
     "prefix": "norm",
-    "body": "\\|${1:${TM_SELECTED_TEXT}}\\| $0",
+    "body": "\\|${1:${TM_SELECTED_TEXT}}\\|$0",
     "description": "norm command"
   },
   "Big|": {
     "prefix": "bigabs",
-    "body": "\\Big| $0",
+    "body": "\\Big|$0",
     "description": "Big |"
   },
   "Cup": {
     "prefix": "cup",
-    "body": "\\cup $0",
+    "body": "\\cup$0",
     "description": "cup"
   },
   "Cap": {
     "prefix": "cap",
-    "body": "\\cap $0",
+    "body": "\\cap$0",
     "description": "cap"
   },
   "Bigcup": {
     "prefix": "bigcup",
-    "body": "\\bigcup $0",
+    "body": "\\bigcup$0",
     "description": "bigcup"
   },
   "Bigcap": {
     "prefix": "bigcap",
-    "body": "\\bigcap $0",
+    "body": "\\bigcap$0",
     "description": "bigcap"
   },
   "Nonumber": {
     "prefix": "nonumber",
-    "body": "\\nonumber $0",
+    "body": "\\nonumber$0",
     "description": "nonumber"
   },
   "Emph": {
     "prefix": "emph",
-    "body": "\\emph{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\emph{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "emphasis font"
   },
   "Underline": {
     "prefix": "underline",
-    "body": "\\underline{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\underline{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "Underline text"
   },
   "Uppercase": {
     "prefix": "uppercase",
-    "body": "\\uppercase{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\uppercase{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "Make text uppercase (all caps)"
   },
   "Lowercase": {
     "prefix": "lowercase",
-    "body": "\\lowercase{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\lowercase{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "Make text lowercase (no caps)"
   },
   "Mathbf": {
     "prefix": "bf",
-    "body": "\\mathbf{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\mathbf{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "math bold font"
   },
   "Mathbb": {
     "prefix": "bb",
-    "body": "\\mathbb{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\mathbb{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "math blackboard bold font"
   },
   "Mathcal": {
     "prefix": "cal",
-    "body": "\\mathcal{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\mathcal{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "math caligraphic font"
   },
   "Mathit": {
     "prefix": "it",
-    "body": "\\mathit{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\mathit{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "math italic font"
   },
   "Mathtt": {
     "prefix": "tt",
-    "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}} $0",
+    "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "math typewriter font"
   },
   "Forall": {
     "prefix": "forall",
-    "body": "\\forall $0",
+    "body": "\\forall$0",
     "description": "forall"
   },
   "Exists": {
     "prefix": "exists",
-    "body": "\\exists $0",
+    "body": "\\exists$0",
     "description": "exists"
   },
   "Sim": {
     "prefix": "dist",
-    "body": "\\sim $0",
+    "body": "\\sim$0",
     "description": "sim"
   },
   "Models": {
     "prefix": "models",
-    "body": "\\vDash $0",
+    "body": "\\vDash$0",
     "description": "models"
   },
   "Proves": {
     "prefix": "proves",
-    "body": "\\vdash $0",
+    "body": "\\vdash$0",
     "description": "proves"
   },
   "Wedge": {
     "prefix": "and",
-    "body": "\\wedge $0",
+    "body": "\\wedge$0",
     "description": "wedge"
   },
   "Vee": {
     "prefix": "or",
-    "body": "\\vee $0",
+    "body": "\\vee$0",
     "description": "vee"
   },
   "In": {
     "prefix": "in",
-    "body": "\\in $0",
+    "body": "\\in$0",
     "description": "in"
   },
   "Subset": {
     "prefix": "subset",
-    "body": "\\subseteq $0",
+    "body": "\\subseteq$0",
     "description": "subseteq"
   },
   "Aleph": {
     "prefix": "aleph",
-    "body": "\\aleph $0",
+    "body": "\\aleph$0",
     "description": "aleph"
   },
   "Aleph0": {
     "prefix": "aleph0",
-    "body": "\\aleph_{0} $0",
+    "body": "\\aleph_{0}$0",
     "description": "aleph0"
   },
   "Continuum": {
     "prefix": "cont",
-    "body": "2^{\\aleph_{0}} $0",
+    "body": "2^{\\aleph_{0}}$0",
     "description": "continuum"
   },
   "Omega1": {
     "prefix": "omega1",
-    "body": "\\omega_{1} $0",
+    "body": "\\omega_{1}$0",
     "description": "omega1"
   },
   "alpha": {
     "prefix": ";a",
-    "body": "\\alpha $0",
+    "body": "\\alpha$0",
     "description": "alpha"
   },
   "beta": {
     "prefix": ";b",
-    "body": "\\beta $0",
+    "body": "\\beta$0",
     "description": "beta"
   },
   "chi": {
     "prefix": ";c",
-    "body": "\\chi $0",
+    "body": "\\chi$0",
     "description": "chi"
   },
   "delta": {
     "prefix": ";d",
-    "body": "\\delta $0",
+    "body": "\\delta$0",
     "description": "delta"
   },
   "epsilon": {
     "prefix": ";e",
-    "body": "\\epsilon $0",
+    "body": "\\epsilon$0",
     "description": "epsilon"
   },
   "varepsilon": {
     "prefix": ";ve",
-    "body": "\\varepsilon $0",
+    "body": "\\varepsilon$0",
     "description": "varepsilon"
   },
   "phi": {
     "prefix": ";f",
-    "body": "\\phi $0",
+    "body": "\\phi$0",
     "description": "phi"
   },
   "varphi": {
     "prefix": ";vp",
-    "body": "\\varphi $0",
+    "body": "\\varphi$0",
     "description": "varphi"
   },
   "gamma": {
     "prefix": ";g",
-    "body": "\\gamma $0",
+    "body": "\\gamma$0",
     "description": "gamma"
   },
   "eta": {
     "prefix": ";h",
-    "body": "\\eta $0",
+    "body": "\\eta$0",
     "description": "eta"
   },
   "iota": {
     "prefix": ";i",
-    "body": "\\iota $0",
+    "body": "\\iota$0",
     "description": "iota"
   },
   "kappa": {
     "prefix": ";k",
-    "body": "\\kappa $0",
+    "body": "\\kappa$0",
     "description": "kappa"
   },
   "lambda": {
     "prefix": ";l",
-    "body": "\\lambda $0",
+    "body": "\\lambda$0",
     "description": "lambda"
   },
   "mu": {
     "prefix": ";m",
-    "body": "\\mu $0",
+    "body": "\\mu$0",
     "description": "mu"
   },
   "nu": {
     "prefix": ";n",
-    "body": "\\nu $0",
+    "body": "\\nu$0",
     "description": "nu"
   },
   "pi": {
     "prefix": ";p",
-    "body": "\\pi $0",
+    "body": "\\pi$0",
     "description": "pi"
   },
   "theta": {
     "prefix": ";th",
-    "body": "\\theta $0",
+    "body": "\\theta$0",
     "description": "theta"
   },
   "vartheta": {
     "prefix": ";vth",
-    "body": "\\vartheta $0",
+    "body": "\\vartheta$0",
     "description": "vartheta"
   },
   "rho": {
     "prefix": ";r",
-    "body": "\\rho $0",
+    "body": "\\rho$0",
     "description": "rho"
   },
   "sigma": {
     "prefix": ";s",
-    "body": "\\sigma $0",
+    "body": "\\sigma$0",
     "description": "sigma"
   },
   "varsigma": {
     "prefix": ";vs",
-    "body": "\\varsigma $0",
+    "body": "\\varsigma$0",
     "description": "varsigma"
   },
   "tau": {
     "prefix": ";t",
-    "body": "\\tau $0",
+    "body": "\\tau$0",
     "description": "tau"
   },
   "upsilon": {
     "prefix": ";u",
-    "body": "\\upsilon $0",
+    "body": "\\upsilon$0",
     "description": "upsilon"
   },
   "omega": {
     "prefix": ";o",
-    "body": "\\omega $0",
+    "body": "\\omega$0",
     "description": "omega"
   },
   "xi": {
     "prefix": ";x",
-    "body": "\\xi $0",
+    "body": "\\xi$0",
     "description": "xi"
   },
   "psi": {
     "prefix": ";ps",
-    "body": "\\psi $0",
+    "body": "\\psi$0",
     "description": "psi"
   },
   "zeta": {
     "prefix": ";z",
-    "body": "\\zeta $0",
+    "body": "\\zeta$0",
     "description": "zeta"
   },
   "Delta": {
     "prefix": ";D",
-    "body": "\\Delta $0",
+    "body": "\\Delta$0",
     "description": "Delta"
   },
   "Phi": {
     "prefix": ";F",
-    "body": "\\Phi $0",
+    "body": "\\Phi$0",
     "description": "Phi"
   },
   "Gamma": {
     "prefix": ";G",
-    "body": "\\Gamma $0",
+    "body": "\\Gamma$0",
     "description": "Gamma"
   },
   "Theta": {
     "prefix": ";Th",
-    "body": "\\Theta $0",
+    "body": "\\Theta$0",
     "description": "Theta"
   },
   "Lambda": {
     "prefix": ";L",
-    "body": "\\Lambda $0",
+    "body": "\\Lambda$0",
     "description": "Lambda"
   },
   "Xi": {
     "prefix": ";X",
-    "body": "\\Xi $0",
+    "body": "\\Xi$0",
     "description": "Xi"
   },
   "Psi": {
     "prefix": ";Ps",
-    "body": "\\Psi $0",
+    "body": "\\Psi$0",
     "description": "Psi"
   },
   "Sigma": {
     "prefix": ";S",
-    "body": "\\Sigma $0",
+    "body": "\\Sigma$0",
     "description": "Sigma"
   },
   "Upsilon": {
     "prefix": ";U",
-    "body": "\\Upsilon $0",
+    "body": "\\Upsilon$0",
     "description": "Upsilon"
   },
   "Omega": {
     "prefix": ";W",
-    "body": "\\Omega $0",
+    "body": "\\Omega$0",
     "description": "Omega"
   },
   "(": {
@@ -908,12 +908,12 @@
   },
   "Innerprod": {
     "prefix": "innerprod",
-    "body": "\\langle $1, $2 \\rangle $0",
+    "body": "\\langle $1, $2 \\rangle$0",
     "description": "\\langle , \\rangle]"
   },
   "Set": {
     "prefix": "set",
-    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\} $0",
+    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\}$0",
     "description": "left{ : right}"
   },
   "Algorithm": {
@@ -932,7 +932,7 @@
       "\t\t\\State \\textbf{return} \\$state\\$",
       "\t\\end{algorithmic}",
       "\\end{algorithm}",
-      " $0"
+      "$0"
     ],
     "description": "Add an algorithm"
   },
@@ -957,7 +957,7 @@
     "prefix": "for",
     "body": [
       "\\For{i=0:$1}",
-      "\t\\State  $0",
+      "\t\\State $0",
       "\\EndFor"
     ],
     "desciption": "Add an for statement of algorithm"
@@ -966,7 +966,7 @@
     "prefix": "while",
     "body": [
       "\\While{$1}",
-      "\t\\State  $0",
+      "\t\\State $0",
       "\\EndWhile"
     ],
     "desciption": "Add an for statement of algorithm"
@@ -974,7 +974,7 @@
   "Algorithm:Ref": {
     "prefix": "algo:ref",
     "body": [
-      "${1:Algorithm}~\\ref{algo:$2} $0"
+      "${1:Algorithm}~\\ref{algo:$2}$0"
     ],
     "desciption": "Ref for Algorithm"
   },
@@ -987,7 +987,7 @@
       "\t\\end{center}",
       "\t\\caption{$3}\\label{fig:$4}",
       "\\end{figure}",
-      " $0"
+      "$0"
     ],
     "description": "Add a figure"
   },
@@ -1009,14 +1009,14 @@
       "\t\t\\end{tabular}",
       "\t\\end{center}",
       "\\end{table}",
-      " $0"
+      "$0"
     ],
     "description": "Add a table"
   },
   "Cite": {
     "prefix": "cite",
     "body": [
-      "\\cite{$1} $0"
+      "\\cite{$1}$0"
     ],
     "description": "Add a cite"
   },
@@ -1081,7 +1081,7 @@
       "",
       "\\begin{document}",
       "    \\maketitle",
-      "     $0",
+      "    $0",
       "\\end{document}"
     ],
     "description": "Use the default template which includes a variety of packages and declared-commands. The template will also automatically generate the title and author, as well as date, and will formate the document."
