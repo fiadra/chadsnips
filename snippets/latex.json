@@ -878,7 +878,7 @@
   },
   "(": {
     "prefix": ";(",
-    "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right",
+    "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right\\",
     "description": "left( ... right)"
   },
   "{": {
@@ -888,8 +888,18 @@
   },
   "[": {
     "prefix": ";[",
-    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right",
+    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right\\",
     "description": "left[ ... right]"
+  },
+  "Floor": {
+    "prefix": "floor",
+    "body": "\\lfloor ${1:${TM_SELECTED_TEXT}} \\rfloor$0",
+    "description": "floor snippet"
+  },
+  "Ceiling": {
+    "prefix": "ceil",
+    "body": "\\lceil ${1:${TM_SELECTED_TEXT}} \\rceil$0",
+    "description": "ceiling snippet"
   },
   "Probability": {
     "prefix": "P",
