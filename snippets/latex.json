@@ -913,12 +913,12 @@
   },
   "Variance": {
     "prefix": "var",
-    "body": "\\text{Var}($1)$0",
+    "body": "\\operatorname{Var}($1)$0",
     "description": "variance symbol"
   },
   "Determinant": {
     "prefix": "det",
-    "body": "\\text{det}($1)$0",
+    "body": "\\det($1)$0",
     "description": "det symbol"
   },
   "Innerprod": {
