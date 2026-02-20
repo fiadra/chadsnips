@@ -543,12 +543,12 @@
   },
   "Absolute Value": {
     "prefix": "abs",
-    "body": "| ${1:${TM_SELECTED_TEXT}} |$0",
+    "body": "\\left| ${1:${TM_SELECTED_TEXT}} \\right|$0",
     "description": "abs command"
   },
   "Norm": {
     "prefix": "norm",
-    "body": "\\|${1:${TM_SELECTED_TEXT}}\\|$0",
+    "body": "\\left\\|${1:${TM_SELECTED_TEXT}}\\right\\|$0",
     "description": "norm command"
   },
   "Big|": {
@@ -923,7 +923,7 @@
   },
   "Innerprod": {
     "prefix": "innerprod",
-    "body": "\\langle $1, $2 \\rangle$0",
+    "body": "\\left\\langle $1, $2 \\right\\rangle$0",
     "description": "\\langle , \\rangle]"
   },
   "Set": {
