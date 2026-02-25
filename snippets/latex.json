@@ -395,14 +395,13 @@
     }
   },
   "Auto Superscript Braces": {
-    "prefix": "\\^\\^",
+    "prefix": "^^",
     "body": [
       "^{${1:${TM_SELECTED_TEXT}}}"
     ],
     "description": "Auto superscript with braces",
     "luasnip": {
       "autotrigger": true,
-      "regTrig": true,
       "wordTrig": false
     }
   },
