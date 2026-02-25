@@ -258,7 +258,7 @@
       "\\proof"
     ],
     "body": [
-      "\\begin{proof}[Proof ${1:Other Information}]",
+      "\\begin{proof}",
       "\t$0",
       "\\end{proof}"
     ],
@@ -560,7 +560,7 @@
   },
   "Norm": {
     "prefix": "norm",
-    "body": "\\left\\|${1:${TM_SELECTED_TEXT}}\\right\\|$0",
+    "body": "\\left\\| ${1:${TM_SELECTED_TEXT}} \\right\\|$0",
     "description": "norm command"
   },
   "Big|": {
