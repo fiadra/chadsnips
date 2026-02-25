@@ -383,15 +383,28 @@
     "body": "\n\\item ",
     "description": "\\item on a newline"
   },
-  "Subscript": {
-    "prefix": "sub",
-    "body": "_{${1:${TM_SELECTED_TEXT}}}$0",
-    "description": "subscript"
+  "Auto Subscript Braces": {
+    "prefix": "__",
+    "body": [
+      "_{${1:${TM_SELECTED_TEXT}}}"
+    ],
+    "description": "Auto subscript with braces",
+    "luasnip": {
+      "autotrigger": true,
+      "wordTrig": false
+    }
   },
-  "Superscript": {
-    "prefix": "sup",
-    "body": "^{${1:${TM_SELECTED_TEXT}}}$0",
-    "description": "superscript"
+  "Auto Superscript Braces": {
+    "prefix": "\\^\\^",
+    "body": [
+      "^{${1:${TM_SELECTED_TEXT}}}"
+    ],
+    "description": "Auto superscript with braces",
+    "luasnip": {
+      "autotrigger": true,
+      "regTrig": true,
+      "wordTrig": false
+    }
   },
   "Etc": {
     "prefix": [
