@@ -915,7 +915,7 @@
   },
   "Probability": {
     "prefix": "P",
-    "body": "\\mathbb{P}\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\}$0",
+    "body": "\\mathbb{P}\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\}$0",
     "description": "probability symbol with brackets"
   },
   "Expected value": {
