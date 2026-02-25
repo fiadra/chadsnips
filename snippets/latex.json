@@ -890,17 +890,17 @@
   },
   "(": {
     "prefix": ";(",
-    "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right",
+    "body": "\\left( ${1:${TM_SELECTED_TEXT}} \\right)$0",
     "description": "left( ... right)"
   },
   "{": {
     "prefix": ";{",
-    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\",
+    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\}$0",
     "description": "left{ ... right}"
   },
   "[": {
     "prefix": ";[",
-    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right\\",
+    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right\\]$0",
     "description": "left[ ... right]"
   },
   "Floor": {
