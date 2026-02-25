@@ -530,12 +530,12 @@
   },
   "Exp": {
     "prefix": "exp",
-    "body": "\\exp\\left(${1:${TM_SELECTED_TEXT}}\\right)$0",
+    "body": "\\exp\\left( ${1:${TM_SELECTED_TEXT}}\\right)$0",
     "description": "exp command"
   },
   "Log": {
     "prefix": "log",
-    "body": "\\log(${1:${TM_SELECTED_TEXT}})$0",
+    "body": "\\log\\left( ${1:${TM_SELECTED_TEXT}}\\right)$0",
     "description": "log command"
   },
   "Min": {
@@ -915,10 +915,10 @@
   },
   "Probability": {
     "prefix": "P",
-    "body": "\\mathbb{P}$0",
-    "description": "probability symbol"
+    "body": "\\mathbb{P}\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\}$0",
+    "description": "probability symbol with brackets"
   },
-  "Expected Value": {
+  "Expected value": {
     "prefix": "E",
     "body": "\\mathbb{E}$0",
     "description": "expected value symbol"
@@ -927,6 +927,31 @@
     "prefix": "var",
     "body": "\\operatorname{Var}($1)$0",
     "description": "variance symbol"
+  },
+  "Natural numbers": {
+    "prefix": "N",
+    "body": "\\mathbb{N}$0",
+    "description": "natural numbers symbol"
+  },
+  "Integers": {
+    "prefix": "Z",
+    "body": "\\mathbb{Z}$0",
+    "description": "integers symbol"
+  },
+  "Rational numbers": {
+    "prefix": "Q",
+    "body": "\\mathbb{Q}$0",
+    "description": "rational numbers symbol"
+  },
+  "Real numbers": {
+    "prefix": "R",
+    "body": "\\mathbb{R}$0",
+    "description": "real numbers symbol"
+  },
+  "Complex numbers": {
+    "prefix": "C",
+    "body": "\\mathbb{C}$0",
+    "description": "complex numbers symbol"
   },
   "Determinant": {
     "prefix": "det",
