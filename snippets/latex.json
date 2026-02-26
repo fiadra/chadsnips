@@ -180,6 +180,18 @@
     ],
     "description": "Insert a theorem, whose style is already defined in the template. The serial number is automatically generated according to the section."
   },
+  "Proposition": {
+    "prefix": [
+      "prop",
+      "\\prop"
+    ],
+    "body": [
+      "\\begin{proposition}",
+      "\t$0",
+      "\\end{proposition}"
+    ],
+    "description": "Insert a proposition, whose style is already defined in the template. The serial number is automatically generated according to the section."
+  },
   "Lemma": {
     "prefix": [
       "lemma",
@@ -553,6 +565,16 @@
     "body": "\\lim_{$1}$0",
     "description": "lim command"
   },
+  "Inf": {
+    "prefix": "inf",
+    "body": "\\inf_{$1}$0",
+    "description": "inf command"
+  },
+  "Sup": {
+    "prefix": "sup",
+    "body": "\\sup_{$1}$0",
+    "description": "sup command"
+  },
   "Absolute Value": {
     "prefix": "abs",
     "body": "\\left| ${1:${TM_SELECTED_TEXT}} \\right|$0",
@@ -895,12 +917,12 @@
   },
   "{": {
     "prefix": ";{",
-    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\}$0",
+    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\}$0",
     "description": "left{ ... right}"
   },
   "[": {
     "prefix": ";[",
-    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right\\]$0",
+    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right\\\\]$0",
     "description": "left[ ... right]"
   },
   "Floor": {
