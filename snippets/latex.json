@@ -175,7 +175,7 @@
     ],
     "body": [
       "\\begin{theorem}[${1:name of the theorem}]",
-      "$0",
+      "  $0",
       "\\end{theorem}"
     ],
     "description": "Insert a theorem, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -187,7 +187,7 @@
     ],
     "body": [
       "\\begin{proposition}",
-      "$0",
+      "  $0",
       "\\end{proposition}"
     ],
     "description": "Insert a proposition, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -199,7 +199,7 @@
     ],
     "body": [
       "\\begin{lemma}[${1:name of the lemma}]",
-      "$0",
+      "  $0",
       "\\end{lemma}"
     ],
     "description": "Insert a lemma, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -211,7 +211,7 @@
     ],
     "body": [
       "\\begin{fact}",
-      "$0",
+      "  $0",
       "\\end{fact}"
     ],
     "description": "Insert a fact, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -223,7 +223,7 @@
     ],
     "body": [
       "\\begin{corollary}",
-      "$0",
+      "  $0",
       "\\end{corollary}"
     ],
     "description": "Insert a corollary, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -235,7 +235,7 @@
     ],
     "body": [
       "\\begin{remark}",
-      "$0",
+      "  $0",
       "\\end{remark}"
     ],
     "description": "Insert a remark, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -247,7 +247,7 @@
     ],
     "body": [
       "\\begin{problem}[${1:name of the problem}]",
-      "$0",
+      "  $0",
       "\\end{problem}"
     ],
     "description": "Insert a problem, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -259,7 +259,7 @@
     ],
     "body": [
       "\\begin{definition}[${1:name of the definition}]",
-      "$0",
+      "  $0",
       "\\end{definition}"
     ],
     "description": "Insert a definition, whose style is already defined in the template. The serial number is automatically generated according to the section."
@@ -271,7 +271,7 @@
     ],
     "body": [
       "\\begin{proof}",
-      "$0",
+      "  $0",
       "\\end{proof}"
     ],
     "description": "Insert a proof, whose style is already defined in the template. The serial number is automatically generated according to the section."
