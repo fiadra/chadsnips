@@ -1052,6 +1052,22 @@
     ],
     "desciption": "Ref for Algorithm"
   },
+  "Piecewise function": {
+    "prefix": [
+      "piecewise",
+      "pwfunc"
+    ],
+    "body": [
+      "${1:f}(x) =",
+      "\\left\\{",
+      "\\begin{align}",
+      "\t${2:expression_1} &\\quad \\text{if } ${3:condition_1} \\\\",
+      "\t${4:expression_2} &\\quad \\text{if } ${5:condition_2}",
+      "\\end{align}",
+      "\\right."
+    ],
+    "description": "Piecewise function using manual \\left\\{ ... \\right. with aligned environment."
+  },
   "Figure": {
     "prefix": "figure",
     "body": [
