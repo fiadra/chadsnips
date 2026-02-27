@@ -1058,16 +1058,14 @@
       "pwfunc"
     ],
     "body": [
-      "$1 =",
-      "\\left\\{",
-      "\\begin{align}",
-      "\t${2:expression_1} &\\quad \\text{if } ${3:condition_1} \\\\",
-      "\t${4:expression_2} &\\quad \\text{if } ${5:condition_2}",
-      "\\end{align}",
-      "\\right.",
+      "${1:f}(x) =",
+      "\\begin{cases}",
+      "  ${2:expression_1} & \\text{if } ${3:condition_1} \\\\",
+      "  ${4:expression_2} & \\text{if } ${5:condition_2}",
+      "\\end{cases}",
       "$0"
     ],
-    "description": "Piecewise function using manual \\left\\{ ... \\right. with aligned environment."
+    "description": "Piecewise function using the cases environment."
   },
   "Figure": {
     "prefix": "figure",
