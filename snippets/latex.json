@@ -431,7 +431,7 @@
     "description": "\\cdot"
   },
   "Infinity": {
-    "prefix": "inf",
+    "prefix": "infty",
     "body": "\\infty$0",
     "description": "infinity symbol"
   },
