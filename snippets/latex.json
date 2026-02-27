@@ -5,7 +5,7 @@
       "\\bigsum"
     ],
     "body": [
-      "\\displaystyle\\sum_{$1}^{$2}$0"
+      "\\displaystyle\\sum_${1:i=1}^${2:n}$0"
     ],
     "description": "Insert a large summation notation."
   },
@@ -15,7 +15,7 @@
       "\\sum"
     ],
     "body": [
-      "\\sum_{$1}^{$2}$0"
+      "\\sum_${1:i=1}^${2:n}$0"
     ],
     "description": "Insert an inline summation notation, (only in the cases when the environment is inline math environment)."
   },
@@ -25,7 +25,7 @@
       "\\bigprod"
     ],
     "body": [
-      "\\displaystyle\\prod_{$1}^{$2}$0"
+      "\\displaystyle\\prod_${1:i=1}^${2:n}$0"
     ],
     "description": "Insert a large summation notation."
   },
@@ -35,7 +35,7 @@
       "\\prod"
     ],
     "body": [
-      "\\prod_{$1}^{$2}$0"
+      "\\prod_${1:i=1}^${2:n}$0"
     ],
     "description": "Insert an inline summation notation, (only in the cases when the environment is inline math environment)."
   },
@@ -45,7 +45,7 @@
       "\\bigint"
     ],
     "body": [
-      "\\displaystyle\\int_{$1}^{$2}$0"
+      "\\displaystyle\\prod_${1:0}^${2:\\infty}$0"
     ],
     "description": "Insert large integral notation."
   },
@@ -55,7 +55,7 @@
       "\\int"
     ],
     "body": [
-      "\\int_{$1}^{$2}$0"
+      "\\prod_${1:0}^${2:\\infty}$0"
     ],
     "description": "Insert inline integral notation, (only in the cases when the environment is inline math environment)."
   },
@@ -65,7 +65,7 @@
       "\\frac"
     ],
     "body": [
-      "\\frac{$1}{$2}$0"
+      "\\frac${1:1}{$2}$0"
     ],
     "description": [
       "Insert inline fraction notation, (only in the cases when the environment is inline math environment)."
@@ -77,7 +77,7 @@
       "\\fraclarge"
     ],
     "body": [
-      "\\displaystyle\\frac{$1}{$2}$0"
+      "\\displaystyle\\frac${1:1}{$2}$0"
     ],
     "description": [
       "Insert large fraction notation"
