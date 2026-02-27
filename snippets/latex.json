@@ -485,6 +485,11 @@
     "body": "\\bar{${1:${TM_SELECTED_TEXT}}}$0",
     "description": "bar"
   },
+  "Tilde": {
+    "prefix": "tilde",
+    "body": "\\tilde{${1:${TM_SELECTED_TEXT}}}$0",
+    "description": "tilde"
+  },
   "Circ": {
     "prefix": "circ",
     "body": "\\circ$0",
