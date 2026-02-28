@@ -240,6 +240,18 @@
     ],
     "description": "Insert a remark, whose style is already defined in the template. The serial number is automatically generated according to the section."
   },
+  "Example": {
+    "prefix": [
+      "example",
+      "\\example"
+    ],
+    "body": [
+      "\\begin{example}",
+      "  $0",
+      "\\end{example}"
+    ],
+    "description": "Insert a example, whose style is already defined in the template. The serial number is automatically generated according to the section."
+  },
   "Problem": {
     "prefix": [
       "problem",
