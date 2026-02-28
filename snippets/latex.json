@@ -443,7 +443,7 @@
     "description": "\\cdot"
   },
   "Infinity": {
-    "prefix": "infty",
+    "prefix": ";8",
     "body": "\\infty$0",
     "description": "infinity symbol"
   },
