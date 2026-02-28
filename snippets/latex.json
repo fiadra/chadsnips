@@ -938,7 +938,7 @@
     "description": "Upsilon"
   },
   "Omega": {
-    "prefix": ";W",
+    "prefix": ";O",
     "body": "\\Omega$0",
     "description": "Omega"
   },
@@ -1021,6 +1021,11 @@
     "prefix": "set",
     "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\}$0",
     "description": "left{ : right}"
+  },
+  "C*-algebra": {
+    "prefix": "cstar",
+    "body": "\\(C^{*}\\)-algebra",
+    "description": "C*-algebra snippet"
   },
   "Algorithm": {
     "prefix": "alg",
