@@ -1022,6 +1022,21 @@
     "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\}$0",
     "description": "left{ : right}"
   },
+  "Kernel": {
+    "prefix": "ker",
+    "body": "\\ker$0",
+    "description": "ker symbol"
+  },
+  "Image": {
+    "prefix": "im",
+    "body": "\\operatorname{im}$0",
+    "description": "image symbol"
+  },
+  "Domain": {
+    "prefix": "dom",
+    "body": "\\operatorname{dom}$0",
+    "description": "domain symbol"
+  },
   "C*-algebra": {
     "prefix": "cstar",
     "body": "\\(C^{*}\\)-algebra",
