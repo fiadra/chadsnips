@@ -318,9 +318,9 @@
   "Description": {
     "prefix": "desc",
     "body": [
-      "\\begin{description}",
+      "\\\\begin{description}",
       "  \\item[$1] $0",
-      "\\end{description}"
+      "\\\\end{description}"
     ],
     "description": "Description"
   },
@@ -389,9 +389,9 @@
   "\\begin{}…\\end{}": {
     "prefix": "begin",
     "body": [
-      "\\begin{${1:env}}",
+      "\\\\begin{${1:env}}",
       "  ${1/(enumerate|itemize|list)|(description)|(.*)/${1:+\\item }${2:+\\item[] }${3:+}/}$0",
-      "\\end{${1:env}}"
+      "\\\\end{${1:env}}"
     ],
     "description": "Begin - End"
   },
@@ -952,12 +952,12 @@
   },
   "{": {
     "prefix": ";{",
-    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\}$0",
+    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\}$0",
     "description": "left{ ... right}"
   },
   "[": {
     "prefix": ";[",
-    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right\\]$0",
+    "body": "\\left[ ${1:${TM_SELECTED_TEXT}} \\right\\\\]$0",
     "description": "left[ ... right]"
   },
   "Floor": {
@@ -972,7 +972,7 @@
   },
   "Probability": {
     "prefix": "P",
-    "body": "\\mathbb{P}\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\}$0",
+    "body": "\\mathbb{P}\\left\\{ ${1:${TM_SELECTED_TEXT}} \\right\\\\}$0",
     "description": "probability symbol with brackets"
   },
   "Expected value": {
@@ -1115,122 +1115,119 @@
     "body": [
       "${1:f}(x) =",
       "\\begin{cases}",
-      "  ${2:expression_1} & \\text{if } ${3:condition_1} \",\n      ",
-      {
-        "4": "expression_2} & \\text{if } ${5:condition_2}",
-        "\\end{cases}": "$0",
-        "description": "Piecewise function using the cases environment."
-      },
-      {
-        "Figure": {
-          "prefix": "figure",
-          "body": [
-            "\\begin{figure}",
-            "\t\\begin{center}",
-            "\t\t\\includegraphics[width=0.95\\textwidth]{figures/$1}",
-            "\t\\end{center}",
-            "\t\\caption{$3}\\label{fig:$4}",
-            "\\end{figure}",
-            "$0"
-          ],
-          "description": "Add a figure"
-        },
-        "Table": {
-          "prefix": "table",
-          "body": [
-            "\\begin{table}",
-            "\t\\caption{$1}\\label{tab:$2}",
-            "\t\\begin{center}",
-            "\t\t\\begin{tabular}[c]{l|l}",
-            "\t\t\t\\hline",
-            "\t\t\t\\multicolumn{1}{c|}{\\textbf{$3}} & ",
-            "\t\t\t\\multicolumn{1}{c}{\\textbf{$4}} \",\n      ",
-            "t\t\t\\hline",
-            "\t\t\ta & b \",\n      ",
-            "t\t\tc & d \"",
-            "\t\t\t$5",
-            "\t\t\t\\hline",
-            "\t\t\\end{tabular}",
-            "\t\\end{center}",
-            "\\end{table}",
-            "$0"
-          ],
-          "description": "Add a table"
-        },
-        "Cite": {
-          "prefix": "cite",
-          "body": [
-            "\\cite{$1}$0"
-          ],
-          "description": "Add a cite"
-        },
-        "Template": {
-          "prefix": [
-            "template",
-            "\\template"
-          ],
-          "body": [
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "\\documentclass{article}",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "\\usepackage{graphicx}",
-            "\\usepackage{amssymb}",
-            "\\usepackage{amsmath}",
-            "\\usepackage{amsthm}",
-            "\\usepackage{empheq}",
-            "\\usepackage{booktabs}",
-            "\\usepackage{color}",
-            "\\usepackage[utf8]{inputenc}",
-            "\\usepackage[T1]{fontenc}",
-            "\\usepackage{graphicx}",
-            "\\usepackage{mathtools}",
-            "\\usepackage{amsfonts}",
-            "\\usepackage[margin=1in]{geometry}",
-            "\\usepackage[polish]{babel}",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "",
-            "${3:% Other Settings}",
-            "",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "\\geometry{a4paper}",
-            "",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "\\definecolor{ocre}{RGB}{243,102,25}",
-            "\\definecolor{mygray}{RGB}{243,243,244}",
-            "\\definecolor{deepGreen}{RGB}{26,111,0}",
-            "\\definecolor{shallowGreen}{RGB}{235,255,255}",
-            "\\definecolor{deepBlue}{RGB}{61,124,222}",
-            "\\definecolor{shallowBlue}{RGB}{235,249,255}",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "\\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\\normalfont}{0cm}{\\rmfamily\\bfseries}{}{1em}{{\\color{black}\\thmname{#1}~\\thmnumber{#2}}\\thmnote{\\,--\\,#3}}",
-            "\\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\\normalfont}{0cm}{\\rmfamily\\bfseries}{}{1em}{{\\color{black}\\thmname{#1}~\\thmnumber{#2}}\\thmnote{\\,--\\,#3}}",
-            "\\theoremstyle{mytheoremstyle}",
-            "\\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]",
-            "\\theoremstyle{mytheoremstyle}",
-            "\\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]",
-            "\\theoremstyle{myproblemstyle}",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "\\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]",
-            "",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "\\title{${1:Title}}",
-            "\\author{${2:Filip Rabiega}}",
-            "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
-            "",
-            "\\begin{document}",
-            "    \\maketitle",
-            "    $0",
-            "\\end{document}"
-          ],
-          "description": "Use the default template which includes a variety of packages and declared-commands. The template will also automatically generate the title and author, as well as date, and will formate the document."
-        }
-      }
-    ]
+      "  ${2:expression_1} & \\text{if } ${3:condition_1} \\\\",
+      "  ${4:expression_2} & \\text{if } ${5:condition_2}",
+      "\\end{cases}",
+      "$0"
+    ],
+    "description": "Piecewise function using the cases environment."
+  },
+  "Figure": {
+    "prefix": "figure",
+    "body": [
+      "\\begin{figure}",
+      "\t\\begin{center}",
+      "\t\t\\includegraphics[width=0.95\\textwidth]{figures/$1}",
+      "\t\\end{center}",
+      "\t\\caption{$3}\\label{fig:$4}",
+      "\\end{figure}",
+      "$0"
+    ],
+    "description": "Add a figure"
+  },
+  "Table": {
+    "prefix": "table",
+    "body": [
+      "\\begin{table}",
+      "\t\\caption{$1}\\label{tab:$2}",
+      "\t\\begin{center}",
+      "\t\t\\begin{tabular}[c]{l|l}",
+      "\t\t\t\\hline",
+      "\t\t\t\\multicolumn{1}{c|}{\\textbf{$3}} & ",
+      "\t\t\t\\multicolumn{1}{c}{\\textbf{$4}} \\\\\\\\",
+      "\t\t\t\\hline",
+      "\t\t\ta & b \\\\\\\\",
+      "\t\t\tc & d \\\\\\\\",
+      "\t\t\t$5",
+      "\t\t\t\\hline",
+      "\t\t\\end{tabular}",
+      "\t\\end{center}",
+      "\\end{table}",
+      "$0"
+    ],
+    "description": "Add a table"
+  },
+  "Cite": {
+    "prefix": "cite",
+    "body": [
+      "\\cite{$1}$0"
+    ],
+    "description": "Add a cite"
+  },
+  "Template": {
+    "prefix": [
+      "template",
+      "\\template"
+    ],
+    "body": [
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Define Article %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\documentclass{article}",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Using Packages %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\usepackage{graphicx}",
+      "\\usepackage{amssymb}",
+      "\\usepackage{amsmath}",
+      "\\usepackage{amsthm}",
+      "\\usepackage{empheq}",
+      "\\usepackage{booktabs}",
+      "\\usepackage{color}",
+      "\\usepackage[utf8]{inputenc}",
+      "\\usepackage[T1]{fontenc}",
+      "\\usepackage{graphicx}",
+      "\\usepackage{mathtools}",
+      "\\usepackage{amsfonts}",
+      "\\usepackage[margin=1in]{geometry}",
+      "\\usepackage[polish]{babel}",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "",
+      "${3:% Other Settings}",
+      "",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%% Page Setting %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\geometry{a4paper}",
+      "",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%% Define some useful colors %%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\definecolor{ocre}{RGB}{243,102,25}",
+      "\\definecolor{mygray}{RGB}{243,243,244}",
+      "\\definecolor{deepGreen}{RGB}{26,111,0}",
+      "\\definecolor{shallowGreen}{RGB}{235,255,255}",
+      "\\definecolor{deepBlue}{RGB}{61,124,222}",
+      "\\definecolor{shallowBlue}{RGB}{235,249,255}",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%% English Environments %%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\newtheoremstyle{mytheoremstyle}{3pt}{3pt}{\\normalfont}{0cm}{\\rmfamily\\bfseries}{}{1em}{{\\color{black}\\thmname{#1}~\\thmnumber{#2}}\\thmnote{\\,--\\,#3}}",
+      "\\newtheoremstyle{myproblemstyle}{3pt}{3pt}{\\normalfont}{0cm}{\\rmfamily\\bfseries}{}{1em}{{\\color{black}\\thmname{#1}~\\thmnumber{#2}}\\thmnote{\\,--\\,#3}}",
+      "\\theoremstyle{mytheoremstyle}",
+      "\\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowGreen,linecolor=deepGreen,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{theorem}{Theorem}[section]",
+      "\\theoremstyle{mytheoremstyle}",
+      "\\newmdtheoremenv[linewidth=1pt,backgroundcolor=shallowBlue,linecolor=deepBlue,leftmargin=0pt,innerleftmargin=20pt,innerrightmargin=20pt,]{definition}{Definition}[section]",
+      "\\theoremstyle{myproblemstyle}",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\newmdtheoremenv[linecolor=black,leftmargin=0pt,innerleftmargin=10pt,innerrightmargin=10pt,]{problem}{Problem}[section]",
+      "",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Title & Author %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "\\title{${1:Title}}",
+      "\\author{${2:Filip Rabiega}}",
+      "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+      "",
+      "\\begin{document}",
+      "    \\maketitle",
+      "    $0",
+      "\\end{document}"
+    ],
+    "description": "Use the default template which includes a variety of packages and declared-commands. The template will also automatically generate the title and author, as well as date, and will formate the document."
   }
 }
