@@ -487,6 +487,22 @@
     ],
     "description": "Outer product of column and row vector (editable symbols and dimensions)"
   },
+  "Matrix multiplication (generic)": {
+    "prefix": "matmul",
+    "body": [
+      "\\begin{pmatrix}",
+      "${1:a}_{11} & \\cdots & ${1:a}_{1${3:k}} \\\\\\",
+      "\\vdots & \\ddots & \\vdots \\\\\\",
+      "${1:a}_{{${2:m}}1} & \\cdots & ${1:a}_{{${2:m}}${3:k}}",
+      "\\end{pmatrix}",
+      "\\begin{pmatrix}",
+      "${4:b}_{11} & \\cdots & ${4:b}_{1${6:n}} \\\\\\",
+      "\\vdots & \\ddots & \\vdots \\\\\\",
+      "${4:b}_{{${3:k}}1} & \\cdots & ${4:b}_{{${3:k}}${6:n}}",
+      "\\end{pmatrix}"
+    ],
+    "description": "Generic matrix product A(mxk)B(nxp)"
+  },
   "\\begin{}…\\end{}": {
     "prefix": "begin",
     "body": [
