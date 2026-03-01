@@ -445,7 +445,7 @@
     "description": "2x2 block matrix (editable blocks)"
   },
   "Column vector generic": {
-    "prefix": "colvecn",
+    "prefix": "colvec",
     "body": [
       "\\begin{pmatrix}",
       "${1:x}_1 \\\\\\",
@@ -455,6 +455,15 @@
       "\\end{pmatrix}"
     ],
     "description": "Generic column vector (editable symbol)"
+  },
+  "Row vector generic": {
+    "prefix": "rowvec",
+    "body": [
+      "\\begin{pmatrix}",
+      "${1:x}_1 & ${1:x}_2 & \\cdots & ${1:x}_${2:n}",
+      "\\end{pmatrix}"
+    ],
+    "description": "Generic row vector (editable symbol and dimension)"
   },
   "\\begin{}…\\end{}": {
     "prefix": "begin",
