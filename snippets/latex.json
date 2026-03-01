@@ -387,7 +387,7 @@
     "description": "Matrix"
   },
   "Generic nxn matrix": {
-    "prefix": "matgen",
+    "prefix": "matnn",
     "body": [
       "\\begin{pmatrix}",
       "${1:a}_{11} & ${1:a}_{12} & \\cdots & ${1:a}_{1${2:n}} \\\\\\",
@@ -409,6 +409,18 @@
       "\\end{pmatrix}"
     ],
     "description": "Diagonal matrix (editable symbol)"
+  },
+  "Generic mxn matrix": {
+    "prefix": "matmn",
+    "body": [
+      "\\begin{pmatrix}",
+      "${1:a}_{11} & ${1:a}_{12} & \\cdots & ${1:a}_{1${3:n}} \\\\\\",
+      "${1:a}_{21} & ${1:a}_{22} & \\cdots & ${1:a}_{2${3:n}} \\\\\\",
+      "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
+      "${1:a}_{{${2:m}}1} & ${1:a}_{{${2:m}}2} & \\cdots & ${1:a}_{{${2:m}}${3:n}}",
+      "\\end{pmatrix}"
+    ],
+    "description": "Generic m x n matrix (editable symbol, m, n)"
   },
   "Upper triangular matrix": {
     "prefix": "matup",
