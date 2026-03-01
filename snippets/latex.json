@@ -390,59 +390,59 @@
     "prefix": "matgen",
     "body": [
       "\\begin{pmatrix}",
-      "a_{11} & a_{12} & \\cdots & a_{1n} \\\\\\",
-      "a_{21} & a_{22} & \\cdots & a_{2n} \\\\\\",
+      "${1:a}_{11} & ${1:a}_{12} & \\cdots & ${1:a}_{1${2:n}} \\\\\\",
+      "${1:a}_{21} & ${1:a}_{22} & \\cdots & ${1:a}_{2${2:n}} \\\\\\",
       "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
-      "a_{n1} & a_{n2} & \\cdots & a_{nn}",
+      "${1:a}_{{${2:n}}1} & ${1:a}_{{${2:n}}2} & \\cdots & ${1:a}_{{${2:n}}${2:n}}",
       "\\end{pmatrix}"
     ],
-    "description": "Generic n x n matrix"
+    "description": "Generic n x n matrix (editable symbol)"
   },
   "Diagonal matrix": {
     "prefix": "matdiag",
     "body": [
       "\\begin{pmatrix}",
-      "d_1 & 0 & \\cdots & 0 \\\\\\",
-      "0 & d_2 & \\cdots & 0 \\\\\\",
+      "${1:d}_1 & 0 & \\cdots & 0 \\\\\\",
+      "0 & ${1:d}_2 & \\cdots & 0 \\\\\\",
       "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
-      "0 & 0 & \\cdots & d_n",
+      "0 & 0 & \\cdots & ${1:d}_${2:n}",
       "\\end{pmatrix}"
     ],
-    "description": "Diagonal matrix"
+    "description": "Diagonal matrix (editable symbol)"
   },
   "Upper triangular matrix": {
     "prefix": "matup",
     "body": [
       "\\begin{pmatrix}",
-      "a_{11} & a_{12} & \\cdots & a_{1n} \\\\\\",
-      "0 & a_{22} & \\cdots & a_{2n} \\\\\\",
+      "${1:a}_{11} & ${1:a}_{12} & \\cdots & ${1:a}_{1${2:n}} \\\\\\",
+      "0 & ${1:a}_{22} & \\cdots & ${1:a}_{2${2:n}} \\\\\\",
       "\\vdots & \\vdots & \\ddots & \\vdots \\\\\\",
-      "0 & 0 & \\cdots & a_{nn}",
+      "0 & 0 & \\cdots & ${1:a}_{{${2:n}}${2:n}}",
       "\\end{pmatrix}"
     ],
-    "description": "Upper triangular matrix"
+    "description": "Upper triangular matrix (editable symbol)"
   },
   "Block matrix": {
     "prefix": "matblock",
     "body": [
       "\\begin{pmatrix}",
-      "A & B \\\\\\",
-      "C & D",
+      "${1:A} & ${2:B} \\\\\\",
+      "${3:C} & ${4:D}",
       "\\end{pmatrix}"
     ],
-    "description": "2x2 block matrix"
+    "description": "2x2 block matrix (editable blocks)"
   },
   "Column vector generic": {
     "prefix": "colvecn",
     "body": [
       "\\begin{pmatrix}",
-      "x_1 \\\\\\",
-      "x_2 \\\\\\",
+      "${1:x}_1 \\\\\\",
+      "${1:x}_2 \\\\\\",
       "\\vdots \\\\\\",
-      "x_n",
+      "${1:x}_${2:n}",
       "\\end{pmatrix}"
     ],
-    "description": "Generic column vector"
+    "description": "Generic column vector (editable symbol)"
   },
   "\\begin{}…\\end{}": {
     "prefix": "begin",
