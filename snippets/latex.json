@@ -647,6 +647,11 @@
     "body": "\\times$0",
     "description": "times"
   },
+  "Tensor": {
+    "prefix": "tensor",
+    "body": "\\otimes$0",
+    "description": "tensor"
+  },
   "Neq": {
     "prefix": "neq",
     "body": "\\neq$0",
@@ -1101,6 +1106,11 @@
     "prefix": "var",
     "body": "\\operatorname{Var}($1)$0",
     "description": "variance symbol"
+  },
+  "Identity operator": {
+    "prefix": "id",
+    "body": "\\operatorname{id}_{$1}$0",
+    "description": "Identity operator"
   },
   "Natural numbers": {
     "prefix": "N",

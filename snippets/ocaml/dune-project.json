@@ -1,17 +1,23 @@
 {
   "lang": {
     "prefix": "lang",
-    "body": ["(lang $1 $2)"],
+    "body": [
+      "(lang $1 $2)"
+    ],
     "description": "Snippet for a lang stanza"
   },
   "name": {
     "prefix": "name",
-    "body": ["(name $1)"],
+    "body": [
+      "(name $1)"
+    ],
     "description": "Snippet for a name stanza"
   },
   "using": {
     "prefix": "using",
-    "body": ["(using $1 $2)"],
+    "body": [
+      "(using $1 $2)"
+    ],
     "description": "Snippet for an using stanza"
   },
   "info": {
