@@ -1190,6 +1190,11 @@
     "body": "\\(C^{*}\\)-algebra",
     "description": "C*-algebra snippet"
   },
+  "Crossed product C*-algebra": {
+    "prefix": "crossprod",
+    "body": "$1 \\rtimes_{\\hat{$2}} \\hat{$3} $0",
+    "description": "Crossed product C*-algebra snippet"
+  },
   "Algorithm": {
     "prefix": "alg",
     "body": [
