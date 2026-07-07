@@ -1149,7 +1149,7 @@
   },
   "Set": {
     "prefix": "set",
-    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\}$0",
+    "body": "\\left\\{ ${1:${TM_SELECTED_TEXT}} : $2 \\right\\\\}$0",
     "description": "left{ : right}"
   },
   "Kernel": {
