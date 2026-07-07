@@ -1008,7 +1008,10 @@
     "description": "omega"
   },
   "xi": {
-    "prefix": ";x",
+    "prefix": [
+      ";x",
+      ";xi"
+    ],
     "body": "\\xi$0",
     "description": "xi"
   },
