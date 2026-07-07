@@ -807,6 +807,11 @@
     "body": "\\mathtt{${1:${TM_SELECTED_TEXT:text}}}$0",
     "description": "math typewriter font"
   },
+  "Mathfrak": {
+    "prefix": "frak",
+    "body": "\\mathfrak{${1:${TM_SELECTED_TEXT:text}}}$0",
+    "description": "math fraktur font"
+  },
   "Forall": {
     "prefix": "forall",
     "body": "\\forall$0",
@@ -1136,6 +1141,16 @@
     "prefix": "C",
     "body": "\\mathbb{C}$0",
     "description": "complex numbers symbol"
+  },
+  "General linear Lie algebra": {
+    "prefix": "gl",
+    "body": "\\mathfrak{gl}_{$1}$0",
+    "description": "General linear Lie algebra"
+  },
+  "Special linear Lie algebra": {
+    "prefix": "sl",
+    "body": "\\mathfrak{sl}_{$1}$0",
+    "description": "Special linear Lie algebra"
   },
   "Determinant": {
     "prefix": "det",
