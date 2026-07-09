@@ -657,6 +657,11 @@
     "body": "\\neq$0",
     "description": "neq symbol"
   },
+  "Colon": {
+    "prefix": "colon",
+    "body": "\\colon$0",
+    "description": "colon symbol"
+  },
   "Isomorphic": {
     "prefix": "iso",
     "body": "\\cong$0",
